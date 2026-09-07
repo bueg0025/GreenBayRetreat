@@ -94,6 +94,7 @@ p { margin: 0 0 1em; color: var(--color-charcoal-700); }
 }
 .section--dark h2, .section--dark h3 { color: var(--color-cream-50); }
 .section--dark p { color: var(--color-cream-200); }
+.section--dark .faq-question { color: var(--color-cream-50); }
 
 .section-header {
   max-width: 640px;
