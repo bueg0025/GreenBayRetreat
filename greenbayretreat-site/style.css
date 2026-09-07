@@ -539,6 +539,7 @@ p { margin: 0 0 1em; color: var(--color-charcoal-700); }
 }
 @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; } }
 .footer-grid h4 { color: var(--color-cream-50); font-size: 0.9rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.footer-grid p { color: var(--color-cream-200); }
 .footer-grid ul { list-style: none; margin: 0; padding: 0; }
 .footer-grid li { margin-bottom: 10px; }
 .footer-grid a { color: var(--color-cream-200); transition: color var(--transition); }
@@ -560,6 +561,7 @@ p { margin: 0 0 1em; color: var(--color-charcoal-700); }
   color: var(--color-cream-50);
   padding: 64px 0 56px;
 }
+.page-hero h1 { color: var(--color-cream-50); }
 .page-hero p { color: var(--color-cream-200); max-width: 620px; }
 .breadcrumb {
   font-size: 0.82rem;
