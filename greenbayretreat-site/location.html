@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Location &amp; Things To Do | Green Bay Retreat Near Lambeau Field</title>
-<meta name="description" content="Green Bay Retreat sits about 1 mile from Lambeau Field. Explore the best nearby coffee shops, breweries, restaurants, game-day bars, and attractions in Green Bay, WI.">
+<meta name="description" content="Green Bay Retreat sits about 0.5 miles from Lambeau Field. Explore the best nearby coffee shops, breweries, restaurants, game-day bars, and attractions in Green Bay, WI.">
 <link rel="canonical" href="https://www.greenbayretreat.com/location.html">
 
 <meta property="og:type" content="website">
@@ -18,6 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <link rel="stylesheet" href="/css/style.css">
 
 <script type="application/ld+json">
@@ -55,7 +56,33 @@
     <div class="breadcrumb"><a href="/">Home</a> / Location &amp; Things To Do</div>
     <span class="eyebrow" style="color:#e9dfc8;">Location</span>
     <h1>Everything worth doing, a short walk or drive away</h1>
-    <p>Green Bay Retreat sits about 1 mile from Lambeau Field off Oneida St. — close enough to walk to the stadium and Titletown District, with downtown Green Bay's food and drink scene just minutes further.</p>
+    <p>Green Bay Retreat sits about 0.5 miles from Lambeau Field off Oneida St. — close enough to walk to the stadium and Titletown District, with downtown Green Bay's food and drink scene just minutes further.</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header center">
+      <span class="eyebrow">Interactive Map</span>
+      <h2>See exactly how close everything is</h2>
+      <p>The shaded circle marks the general area of Green Bay Retreat — your exact address is provided at booking for privacy. Every pin below is a real, precise location with its actual distance from the property.</p>
+    </div>
+    <div id="map-filters" class="map-filters">
+      <button type="button" class="map-filter-btn is-active" data-filter="all">All</button>
+      <button type="button" class="map-filter-btn" data-filter="attractions">Attractions</button>
+      <button type="button" class="map-filter-btn" data-filter="outdoors">Outdoors</button>
+      <button type="button" class="map-filter-btn" data-filter="coffee">Coffee</button>
+      <button type="button" class="map-filter-btn" data-filter="breakfast">Breakfast</button>
+      <button type="button" class="map-filter-btn" data-filter="dining">Dining</button>
+      <button type="button" class="map-filter-btn" data-filter="pizza">Pizza</button>
+      <button type="button" class="map-filter-btn" data-filter="breweries">Breweries</button>
+      <button type="button" class="map-filter-btn" data-filter="bars">Game-Day Bars</button>
+    </div>
+    <div id="attractions-map" class="attractions-map"></div>
+    <div class="map-distance-panel">
+      <h3>Distance at a glance</h3>
+      <ul id="map-distance-list" class="poi-list poi-list--compact"></ul>
+    </div>
   </div>
 </section>
 
@@ -66,7 +93,7 @@
       <span class="eyebrow">Landmarks</span>
       <h2>Attractions</h2>
       <ul class="poi-list">
-        <li><span class="poi-name">Lambeau Field</span><p class="poi-desc">Home of the Green Bay Packers, with stadium tours available. About 1 mile from the house.</p></li>
+        <li><span class="poi-name">Lambeau Field</span><p class="poi-desc">Home of the Green Bay Packers, with stadium tours available. About 0.5 miles from the house.</p></li>
         <li><span class="poi-name">Titletown District</span><p class="poi-desc">Outdoor activities, restaurants, and entertainment right next to Lambeau Field.</p></li>
         <li><span class="poi-name">National Railroad Museum</span><p class="poi-desc">Family-friendly and educational — a great rainy-day option.</p></li>
         <li><span class="poi-name">Bay Beach Amusement Park</span><p class="poi-desc">Classic rides and fun for all ages, with famously affordable ticket pricing.</p></li>
@@ -212,7 +239,7 @@
     <div class="footer-grid">
       <div>
         <h4>Green Bay Retreat</h4>
-        <p style="max-width:340px;">A premium 4-bedroom vacation home about 1 mile from Lambeau Field in Green Bay, Wisconsin.</p>
+        <p style="max-width:340px;">A premium 4-bedroom vacation home about 0.5 miles from Lambeau Field in Green Bay, Wisconsin.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -239,5 +266,7 @@
 </footer>
 
 <script src="/js/main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="/js/map.js"></script>
 </body>
 </html>
